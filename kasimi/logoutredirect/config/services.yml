@@ -1,0 +1,7 @@
+services:
+    kasimi.logoutredirect.listener:
+        class: kasimi\logoutredirect\event\listener
+        arguments:
+            - '@config'
+        tags:
+            - { name: event.listener }

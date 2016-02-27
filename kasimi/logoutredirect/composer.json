@@ -1,0 +1,27 @@
+{
+    "name": "kasimi/logoutredirect",
+    "type": "phpbb-extension",
+    "description": "Allows the administrator to specify a URL to which users are redirect to after they logout.",
+    "homepage": "https://github.com/kasimi",
+    "version": "1.0.0",
+    "time": "2016-02-27",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "kasimi",
+            "email": "",
+            "homepage": "https://www.phpbb.com/community/memberlist.php?mode=viewprofile&u=1330603",
+            "role": "Lead Developer"
+        }
+    ],
+	"require": {
+		"php": ">=5.3.3",
+		"phpbb/phpbb": ">=3.1.6-RC1"
+	},
+	"extra": {
+		"display-name": "Logout Redirect",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.6-RC1"
+		}
+	}
+}
