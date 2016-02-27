@@ -17,9 +17,6 @@ class listener implements EventSubscriberInterface
 	/* @var \phpbb\config\config */
 	protected $config;
 
-	/* @var boolean */
-	protected $is_first_user_setup = true;
-
 	/** @var bool */
 	private $is_logout = false;
 
