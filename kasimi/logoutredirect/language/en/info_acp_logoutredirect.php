@@ -24,5 +24,5 @@ $lang = array_merge($lang, array(
 	'LOGOUTREDIRECT_CONFIG_UPDATED'		=> '<strong>Logout Redirect Extension</strong><br />» Configuration updated',
 	'LOGOUTREDIRECT_ENABLED'			=> 'Redirect users after logout',
 	'LOGOUTREDIRECT_URL'				=> 'Redirect URL',
-	'LOGOUTREDIRECT_URL_EXPLAIN'		=> 'EXP',
+	'LOGOUTREDIRECT_URL_EXPLAIN'		=> '',
 ));
