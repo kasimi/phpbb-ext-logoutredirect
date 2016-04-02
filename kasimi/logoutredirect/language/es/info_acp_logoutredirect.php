@@ -24,5 +24,4 @@ $lang = array_merge($lang, array(
 	'LOGOUTREDIRECT_CONFIG_UPDATED'		=> '<strong>Extensión Redirección de Salida</strong><br />» Configuración actualizada',
 	'LOGOUTREDIRECT_ENABLED'			=> 'Redirigir a los usuarios después de cerrar la sesión',
 	'LOGOUTREDIRECT_URL'				=> 'URL de redirección',
-	'LOGOUTREDIRECT_URL_EXPLAIN'		=> '',
 ));
