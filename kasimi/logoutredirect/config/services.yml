@@ -3,5 +3,6 @@ services:
         class: kasimi\logoutredirect\event\listener
         arguments:
             - '@config'
+            - '@request'
         tags:
             - { name: event.listener }

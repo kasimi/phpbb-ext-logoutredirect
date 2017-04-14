@@ -17,6 +17,9 @@ class listener implements EventSubscriberInterface
 	/* @var \phpbb\config\config */
 	protected $config;
 
+	/** @var \phpbb\request\request */
+	protected $request;
+
 	/** @var bool */
 	private $is_logout = false;
 
@@ -24,10 +27,12 @@ class listener implements EventSubscriberInterface
  	 * Constructor
 	 *
 	 * @param \phpbb\config\config $config
+	 * @param \phpbb\request\request $request
 	 */
-	public function __construct(\phpbb\config\config $config)
+	public function __construct(\phpbb\config\config $config, \phpbb\request\request $request)
 	{
 		$this->config = $config;
+		$this->request = $request;
 	}
 
 	/**
@@ -56,7 +61,7 @@ class listener implements EventSubscriberInterface
 	{
 		if ($this->is_logout && $this->config['kasimi.logoutredirect.enabled'])
 		{
-			$event['url'] = $this->config['kasimi.logoutredirect.url'];
+			$event['url'] = $this->request->variable('redirect', $this->config['kasimi.logoutredirect.url']);
 			$this->is_logout = false;
 		}
 	}
